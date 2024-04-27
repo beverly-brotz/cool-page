@@ -1,13 +1,13 @@
 * {
   border: 1px solid red;
   box-sizing: inherit;
-
 }
 
 body, html{
   margin: 0;
   box-sizing: border-box;
 }
+
 
 /* HEADER CSS STARTS*/
 header{
@@ -60,7 +60,19 @@ nav ul {
 }
 
 /*HEADER CSS ENDS*/
+main, .content-sections{
+  display: flex;
+  flex-direction: column;
+}
 
+.content-sections {
+  padding-inline:200px;
+  padding-block:50px;
+}
+.sect-inner {
+  display: flex;
+  flex-direction: row;
+}
 
 span#copyleft {
     display: inline-block;

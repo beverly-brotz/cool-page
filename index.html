@@ -8,10 +8,10 @@
 </head>
 <body>
   <div id="container">
-    <header>
-      <nav>
+    <header class="flex-column">
+      <nav class="flex-row">
         <div id="header-logo">Header</div>
-        <ul>
+        <ul class="flex-row">
           <li>linkie 1</li>
           <li>linkie 2</li>
           <li>linkie 3</li>
@@ -31,27 +31,39 @@
 
 
     </header>
-    <main>
-        <div id="sect-1">
-          <h2>Some random information.</h2>
-          <div class="info-icons"></div>
-          <p>this is some subtext under an illustration or image</p>
-          <div class="info-icons"></div>
-          <p>this is some subtext under an illustration or image</p>
-          <div class="info-icons"></div>
-          <p>this is some subtext under an illustration or image</p>
-          <div class="info-icons"></div>
-          <p>this is some subtext under an illustration or image</p>
+    <main class="flex-column">
+        <div id="sect-1" class="column-sect, content-sections">
+            <h2>Some random information.</h2>
+          <div class="flex-row">
+            <div class="flex-column">
+              <div class="info-icons"></div>
+              <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="flex-column">
+              <div class="info-icons"></div>
+              <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="flex-column">
+              <div class="info-icons"></div>
+              <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="flex-column">
+              <div class="info-icons"></div>
+              <p>this is some subtext under an illustration or image</p>
+            </div>
+          </div>
         </div>
-        <div id="sect-2">
+        <div id="sect-2" class="content-sections">
           <p>I really like mints. I'm eating a whole bag of them now.</p>
           <h3>-a mint fiend</h3>
         </div>
         <div id="sect-3">
-          <div id="call-to-action">
-            <h3>Call to action! It's time!</h3>
-            <p>Sign up for... Something? by clicking that button over there.</p>
-            <button class="signup-button">Sign Up</button>
+          <div class="flex-column">
+            <div id="call-to-action" class="content-sections">
+              <h3>Call to action! It's time!</h3>
+              <p>Sign up for... Something? by clicking that button over there.</p>
+              <button class="signup-button">Sign Up</button>
+            </div>
           </div>
         </div>
     </main>
