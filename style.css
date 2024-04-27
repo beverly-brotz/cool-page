@@ -1,0 +1,8 @@
+* {
+  border: 1px solid red;
+}
+
+span#copyleft {
+    display: inline-block;
+    transform: scale(-1, 1);
+}
