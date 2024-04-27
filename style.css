@@ -1,6 +1,55 @@
 * {
   border: 1px solid red;
+  box-sizing: border-box;
 }
+
+body, html{
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+nav, nav ul, .header-box{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.header-box {
+  margin: 0;
+  justify-content: center;
+}
+.header-box:nth-child(2) {
+  padding-block: 20px;
+}
+.header-inner-box  {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 30%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.header-inner-box:nth-child(2){
+  justify-content: center;
+  align-items: center;
+}
+
+.header-inner-box h1, .header-inner-box p {
+  margin:0;
+}
+
+
+
+
 
 span#copyleft {
     display: inline-block;
