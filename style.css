@@ -8,20 +8,28 @@ body, html{
   box-sizing: border-box;
 }
 
-
-/* HEADER CSS STARTS*/
-header{
+.flex-column{
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.content-sections {
+  padding-inline:200px;
+  padding-block:50px;
+}
+
+/* HEADER CSS STARTS*/
 
 nav, nav ul, .header-box{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 nav{
   padding-block:10px;
   padding-inline: 20%;
@@ -33,6 +41,7 @@ nav ul {
   gap: 15px;
   list-style-type: none;
 }
+
 .header-box {
   margin: 0;
   justify-content: center;
@@ -42,6 +51,7 @@ nav ul {
   padding-top: 20px;
   padding-bottom:50px;
 }
+
 .header-inner-box, .header-inner-box:nth-child(2) {
   display: flex;
   flex-direction: column;
@@ -60,21 +70,23 @@ nav ul {
 }
 
 /*HEADER CSS ENDS*/
-main, .content-sections{
-  display: flex;
-  flex-direction: column;
+#sect-1, #sect-1 .flex-column {
+  text-align: center;
+  justify-content: center;
+  align-items: center;;
+}
+.info-icons {
+  height:100px;
+  width: 100px;
 }
 
-.content-sections {
-  padding-inline:200px;
-  padding-block:50px;
-}
-.sect-inner {
+footer{
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  padding:10px;
+  gap:5px;
 }
-
 span#copyleft {
-    display: inline-block;
-    transform: scale(-1, 1);
+  display: inline-block;
+  transform: scale(-1, 1);
 }
