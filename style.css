@@ -18,8 +18,12 @@ body, html{
   flex-direction: row;
 }
 
-
 /* HEADER CSS STARTS*/
+
+header {
+  background-color: purple;
+  color: cyan;
+}
 
 nav, nav ul{
   justify-content: space-between;
@@ -45,12 +49,13 @@ nav ul {
 .header-box:first-child{
   width:80%;
 }
+
 .header-box:nth-child(2) {
   padding-top: 20px;
   padding-bottom:50px;
 }
 
-.header-inner-box, .header-inner-box:nth-child(2) {
+.header-inner-box{
   gap: 5px;
   width: 100%;
   justify-content: center;
@@ -86,11 +91,9 @@ nav ul {
   width: 100px;
 }
 
-
 #sect-2 .flex-column h3 {
   align-self:flex-end;
 }
-
 
 #sect-3.content-sections {
   padding-inline:15%;
@@ -99,10 +102,13 @@ nav ul {
   margin: 0;
   padding-block:25px;
   justify-content: center;
+  padding-inline:100px;
+  gap:28%;
 }
 
 #sect-3 h3, #sect-3 p, #sect-2 h3, #sect-2 p {
   margin:0;
+  
 }
 
 footer{
@@ -111,6 +117,7 @@ footer{
   padding:10px;
   gap:5px;
 }
+
 span#copyleft {
   display: inline-block;
   transform: scale(-1, 1);
